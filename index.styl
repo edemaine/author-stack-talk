@@ -122,23 +122,21 @@ cite
     grid-column: 1
     opacity: 0.666  // new stacking context
     &.a1o2
-      animation: fade-1o2 4s infinite
+      animation: fade-1o2 4s infinite linear
     &.a2o2
-      animation: fade-2o2 4s infinite
+      animation: fade-2o2 4s infinite linear
 
 :root
-  --fade-min: 0.1
+  --fade-min: 0.3
   --fade-max: 1
 
 @keyframes fade-1o2
-  from, to
+  0%, 10%, 90%, 100%
     opacity: var(--fade-max)
-  50%
+  40%, 60%
     opacity: var(--fade-min)
 @keyframes fade-2o2
-  from, to
-    opacity: calc(0.5 * var(--fade-min) + 0.5 * var(--fade-max))
-  25%
+  0%, 10%, 90%, 100%
     opacity: var(--fade-min)
-  75%
+  40%, 60%
     opacity: var(--fade-max)
