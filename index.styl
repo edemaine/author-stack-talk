@@ -134,15 +134,20 @@ cite
 // Author stacks
 .stack
   display: inline-grid
-  > .name
+  cursor: help
+  > *
     text-align: left
     grid-row: 1
     grid-column: 1
+  > .name
     opacity: 0.666  // new stacking context
     &.a1o2
       animation: fade-1o2 4s infinite linear
     &.a2o2
       animation: fade-2o2 4s infinite linear
+  > .semi
+    font-size: 0
+    color: transparent
 
 :root
   --fade-min: 0.3
