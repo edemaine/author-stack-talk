@@ -40,7 +40,10 @@ Here's an overview of the individual files and what they do:
   Defines the top-level structure of the document, but has no slides.
 * [`slides.pug`](slides.pug): Slides and specific animations are defined here.
 * [`index.styl`](index.styl): Custom reveal.js styling,
-  and specific styling for the slides.
+  and specific styling for the slides and author stacks
+  (see `.stack` rule in particular).
+* [`stack.coffee`](stack.coffee): Convert `class="autostack"` spans with
+  semicolon-separated names into necessary HTML for author stacks.
 
 <!-- Add any .coffee, images, etc. files here, if desired -->
 
