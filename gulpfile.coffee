@@ -37,9 +37,12 @@ deploySet = [
   './stack.js'
   # Add images etc. in ./ to this list
   './figs/alphabetical-15.png'
+  './figs/bibliography-sample.png'
+  './figs/circle.png'
   './figs/dog-treat.jpg'
   './figs/human-genome.jpg'
   './figs/publish-and-perish.jpg'
+  './figs/round-robin.jpg'
   './figs/tcizjncl-figure.png'
   './figs/tcizjncl-title.png'
   './figs/weber-table.png'
