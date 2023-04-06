@@ -230,24 +230,72 @@ section
     li <b>Efficiency</b>: Less paper and ink
 
 section
-  h2 Technology
+  h2 Technology: LaTeX
   ul
-    li LaTeX: 
-      span.ml-2.autostack Erik Demaine; Martin Demaine
-      span.ml-2 via
+    li
+      code <span class="keyword">\namestack</span>{Erik Demaine; Martin Demaine}
       br
-      code \namestack{Erik Demaine; Martin Demaine}
+      | → 
+      code <span class="keyword">\vbox</span>{<span class="keyword">\hbox</span>{Erik Demaine}<span class="keyword">\vskip</span>
+      br
+      code &nbsp;&nbsp;&nbsp;-<span class="keyword">\baselineskip</span><span class="keyword">\hbox</span>{Martin Demaine}}
+      br
+      | →
+      span.ml-2.autostack Erik Demaine; Martin Demaine
+      p
+    li Plus:
       ul
         li Hover tooltip
         li Copy/paste
       p
-    li BibTeX: <code>author</code> automatically stacked
-  img(src="figs/bibliography-sample.png", width)
-  ul
-    li HTML: this talk
+    li Source code: 
+      .r-fit-text
+        a(href="https://github.com/edemaine/author-stack-paper") https://github.com/edemaine/author-stack-paper
 
 section
-  h2 Future Work: Name Length
+  h2 Technology: BibTeX
+  ul
+    li <code>stack-abbrvnat.bst</code> bibliography style
+    li <code>author</code> automatically stacked in bibliography and <code>natbib.sty</code> author/year citation
+      p
+  img.frame(src="figs/bibliography-sample.png", style="width: 1050px; max-width: 1050px")
+  ul
+    li Source code: 
+      .r-fit-text
+        a(href="https://github.com/edemaine/author-stack-paper") https://github.com/edemaine/author-stack-paper
+
+section
+  h2 Technology: HTML
+  ul
+    li
+      code &lt;<span class="keyword">span</span> <span class="keyword">class</span>="autostack"&gt;Erik Demaine;
+      br
+      code &nbsp;&nbsp;Martin Demaine&lt;/<span class="keyword">span</span>&gt;
+      span.ml-2 →
+      br
+      code &lt;<span class="keyword">span</span> <span class="keyword">class</span>="stack" <span class="keyword">title</span>="Erik Dem..."&gt;
+      br
+      code &nbsp;&nbsp;&lt;<span class="keyword">span</span> <span class="keyword">class</span>="name"&gt;Erik Demaine&lt;/<span class="keyword">span</span>&gt;
+      br
+      code &nbsp;&nbsp;&lt;<span class="keyword">span</span> <span class="keyword">class</span>="semi"&gt;;&lt;/<span class="keyword">span</span>&gt;
+      br
+      code &nbsp;&nbsp;&lt;<span class="keyword">span</span> <span class="keyword">class</span>="name"&gt;Martin Dem..&lt;/<span class="keyword">span</span>&gt;
+      br
+      code &lt;/<span class="keyword">span</span>&gt;
+      span.ml-2 →
+      span.ml-2.autostack Erik Demaine; Martin Demaine
+      p
+    li CSS Grid with repeated cells: 
+      code <span class="keyword">display</span>: inline-grid;
+      code <span class="keyword">grid-row</span>: 1; 
+      code <span class="keyword">grid-column</span>: 1;
+    li Source code: 
+      .r-fit-text
+        a(href="https://github.com/edemaine/author-stack-talk") https://github.com/edemaine/author-stack-talk
+
+//-
+  section
+    h2 Future Work: Name Length
 
 section
   h2 Future Work: Readability
