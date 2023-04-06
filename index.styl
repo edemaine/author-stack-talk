@@ -43,10 +43,12 @@ cite
   /h2 &
     font-size: 85%
   &.bracket
-    &:before
+    &::before
       content: ' ['
-    &:after
+      white-space: nowrap
+    &::after
       content: ']'
+      white-space: nowrap
 
 // Column formatting:
 //   .columns
@@ -94,6 +96,9 @@ cite
   margin-left: 0.25em
 .ml-2
   margin-left: 0.5em
+.my-0
+  margin-top: 0 !important
+  margin-bottom: 0 !important
 
 // Additional helpers
 .hidden
