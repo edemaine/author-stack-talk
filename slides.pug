@@ -21,8 +21,11 @@ section
     .column
       ul
         li Most common order: <b>decreasing significance</b>
+          p
         li Difficult to measure
+          p
         li Uncomfortable conversations, arguments, feuds
+          p
         li What if contributions are roughly <b>equal</b>?
     .column
       a(href="https://doi.org/10.1126/science.1058040")
@@ -47,8 +50,11 @@ section
       ul
         li <u>Recommendation:</u> Write “X, Y, and Z <cite class="bracket">#</cite>”
         li Impractical for papers with &gt;10 authors
+      p
     li <b>Sorting</b> bibliographies alphabetically clusters more by first author, giving unequal promotion
+      p
     li <i>Above are fundamental limitations of any order</i>
+      p
     li Alphabetical order <b>judged</b> by fields with decreasing-contribution order
 
 section
@@ -59,7 +65,7 @@ section
   a(href="https://doi.org/10.1093/reseval/rvy008", style="margin-top: 0.5em !important; display: block").r-stretch
     img.frame(src="figs/weber-table.png", alt="Table 1 from Weber 2018, summarizing studies on alphabetical discrimination", title="Table 1 from Weber 2018, summarizing studies on alphabetical discrimination")
 
-section(data-transition="fade")
+section
   h2 Alternatives: Games
   ul
     li 25-game croquet series
@@ -85,7 +91,7 @@ section(data-transition="fade")
     .column.fill(style="align-self: center")
       a(href="https://twitter.com/AndyPurvisNHM/status/783326646464045057").url https://twitter.com/ AndyPurvisNHM/status/ 783326646464045057
 
-section(data-transition="fade")
+section
   h2 Alternatives: Randomness
   ul
     li Coin toss
@@ -108,7 +114,7 @@ section(data-transition="fade")
       a.url(href="https://twitter.com/ChelseaRochman/status/1110580954253484032")
         img.my-0(width=600, src="figs/dog-treat.jpg")
 
-section(data-transition="fade")
+section
   h2 Alternatives: Authors
   ul
     li Height
@@ -120,7 +126,7 @@ section(data-transition="fade")
     li Reverse alphabetical order
       br
       cite.bracket.autostack Zolensky; Zega; Yano; Wirick; Westphal; Weisberg; Weber; Warren; Velbel; Tsuchiyama; Tsou; Toppani; Tomioka; Tomeoka; Teslich; Taheri; Susini; Stroud; Stephan; Stadermann; Snead; Simon; Simionovici; See; Robert; Rietmeijer; Rao; Perronnet; Papanastassiou; Okudaira; Ohsumi; Ohnishi; Nakamura-Messenger; Nakamura; Mostefaoui; Mikouchi; Meibom; Matrajt; Marcus; Leroux; Lemelle; Le; Lanzirotti; Langenhorst; Krot; Keller; Kearsley; Joswiak; Jacob; Ishii; Harvey; Hagiya; Grossman; Grossman; Graham; Gounelle; Gillet; Genge; Flynn; Ferroir; Fallon; Ebel; Dai; Cordier; Clark; Chi; Butterworth; Brownlee; Bridges; Brennan; Brearley; Bradley; Bleuet; Bland; Bastien 2006
-    li Degree of belief in the paper's thesis
+    li Degree of belief in the paper’s thesis
       br
       cite.bracket.autostack Clark; Chalmers 1998
 
@@ -226,6 +232,8 @@ section
           span.ml-2 vs.
           span.ml-2 half a page
     li <b>Fairness</b>: Papers with varying number of authors occupy similar space in bibliography
+      img.frame(src="figs/bibliography-sample.png")
+  ul
     li <b>Effort</b>: Easier to meet page limits
     li <b>Efficiency</b>: Less paper and ink
 
@@ -238,7 +246,7 @@ section
       | → 
       code <span class="keyword">\vbox</span>{<span class="keyword">\hbox</span>{Erik Demaine}<span class="keyword">\vskip</span>
       br
-      code &nbsp;&nbsp;&nbsp;-<span class="keyword">\baselineskip</span><span class="keyword">\hbox</span>{Martin Demaine}}
+      code &nbsp;&nbsp;&nbsp;&nbsp;-<span class="keyword">\baselineskip</span><span class="keyword">\hbox</span>{Martin Demaine}}
       br
       | →
       span.ml-2.autostack Erik Demaine; Martin Demaine
@@ -285,10 +293,15 @@ section
       span.ml-2 →
       span.ml-2.autostack Erik Demaine; Martin Demaine
       p
-    li CSS Grid with repeated cells: 
-      code <span class="keyword">display</span>: inline-grid;
+    li CSS Grid (
+      code <span class="keyword">display</span>: inline-grid
+      | ) with
+      br
+      | repeated cells (
       code <span class="keyword">grid-row</span>: 1; 
-      code <span class="keyword">grid-column</span>: 1;
+      code <span class="keyword">grid-column</span>: 1
+      | )
+      p
     li Source code: 
       .r-fit-text
         a(href="https://github.com/edemaine/author-stack-talk") https://github.com/edemaine/author-stack-talk
