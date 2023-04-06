@@ -1,13 +1,15 @@
-<!--Fill in the following with your talk details (if desired).
+# Talk: Every Author as First Author
 
-# Talk:
+This repository contains slides for our (humorous) talk
+“**Every Author as First Author**”
+at [SIGTBD 2023](http://sigtbd.csail.mit.edu/)
+held April 7, 2023 in Cambridge, Massachusetts.
 
-This repository contains slides for our talk...
+See [the corresponding paper](https://github.com/edemaine/author-stack-paper).
 
-## [View Slides](https://...github.io/)
+## [View Slides](https://edemaine.github.io/author-stack-talk/)
 
-[![Title slide](title_slide.jpg)](https://...github.io/)
--->
+[![Title slide](title_slide.jpg)](https://edemaine.github.io/author-stack-talk/)
 
 ## Technology: reveal.js + KaTeX + Pug + Stylus + CoffeeScript
 
