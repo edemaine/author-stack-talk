@@ -1,0 +1,252 @@
+<!DOCTYPE html><html nighteye="disabled"><head><meta charset="utf8"><script src="node_modules/reveal.js/dist/reveal.js"></script><script src="node_modules/reveal.js/plugin/math/math.js"></script><script src="node_modules/reveal.js-plugins/chalkboard/plugin.js"></script><script src="node_modules/@svgdotjs/svg.js/dist/svg.min.js"></script><script src="node_modules/svgtiler/lib/svgtiler.js"></script><link rel="stylesheet" href="node_modules/reveal.js/dist/reveal.css"><link rel="stylesheet" href="node_modules/reveal.js/dist/theme/black.css"><link rel="stylesheet" href="node_modules/reveal.js-plugins/chalkboard/style.css"><link rel="stylesheet" href="node_modules/reveal.js-plugins/menu/font-awesome/css/all.css"><link rel="stylesheet" href="node_modules/@fontsource/merriweather/latin-400.css"><link rel="stylesheet" href="node_modules/@fontsource/merriweather/latin-400-italic.css"><link rel="stylesheet" href="node_modules/@fontsource/merriweather/latin-900.css"><link rel="stylesheet" href="node_modules/@fontsource/merriweather/latin-900-italic.css"><style>:root {
+  --r-main-font: Merriweather, serif;
+  --r-heading-font: Merriweather, serif;
+  --r-heading-text-transform: none;
+  --r-background-color: #000;
+  --r-selection-background-color: #444;
+}
+.reveal .slides section .fragment {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s ease;
+  will-change: initial;
+}
+.reveal .slides section .fragment.visible {
+  opacity: 1;
+  visibility: inherit;
+}
+ul,
+ol {
+  width: calc(100% - 1em);
+  box-sizing: border-box;
+}
+th {
+  color: #000;
+  background: #ccc;
+  border-color: #000;
+}
+cite {
+  color: #c0a5c0;
+  font-weight: normal;
+}
+h2 cite {
+  font-size: 85%;
+}
+cite.bracket::before {
+  content: ' [';
+  white-space: nowrap;
+}
+cite.bracket::after {
+  content: ']';
+  white-space: nowrap;
+}
+.columns {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.columns.v-top {
+  align-items: flex-start;
+}
+.column {
+  text-align: center !important;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.column.fill {
+  flex-basis: 0;
+  flex-grow: 1;
+  align-self: stretch;
+}
+.column.space {
+  width: 30px;
+}
+.column.arrow {
+  margin: 0 10px;
+  font-size: 200%;
+}
+.column.arrow:before {
+  content: '🡆';
+}
+.text-center {
+  text-align: center !important;
+}
+.vertical-middle {
+  vertical-align: middle !important;
+}
+.d-inline-block {
+  display: inline-block;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.h-100 {
+  height: 100%;
+}
+.ml-1,
+span.space {
+  margin-left: 0.25em;
+}
+.ml-2 {
+  margin-left: 0.5em;
+}
+.my-0 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.hidden {
+  position: absolute;
+  display: block;
+}
+.invert {
+  filter: invert(1) hue-rotate(180deg);
+}
+.invert.pop {
+  filter: invert(1) hue-rotate(180deg) drop-shadow(0 0 1px #fff);
+}
+.invert.pop.bright {
+  filter: invert(1) hue-rotate(180deg) brightness(1.75) drop-shadow(0 0 1px #fff);
+}
+.full {
+  margin: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+.url {
+  display: block;
+  font-size: 40%;
+  font-family: monospace;
+}
+.sep {
+  display: inline-block;
+  color: #9a5b9a;
+  margin: 0 0.25em;
+}
+.frame {
+  border: solid;
+  margin: 0 !important;
+  padding: 0.25em;
+}
+.frame.invert {
+  border-color: #000;
+}
+.stack {
+  display: inline-grid;
+  cursor: help;
+}
+.stack > * {
+  text-align: left;
+  grid-row: 1;
+  grid-column: 1;
+}
+.stack > .name {
+  opacity: 0.666;
+}
+.stack > .name.a1o2 {
+  animation: fade-1o2 4s infinite linear;
+}
+.stack > .name.a2o2 {
+  animation: fade-2o2 4s infinite linear;
+}
+.stack > .semi {
+  font-size: 0;
+  color: transparent;
+}
+:root {
+  --fade-min: 0.3;
+  --fade-max: 1;
+}
+@-moz-keyframes fade-1o2 {
+  0%, 10%, 90%, 100% {
+    opacity: var(--fade-max);
+  }
+  40%, 60% {
+    opacity: var(--fade-min);
+  }
+}
+@-webkit-keyframes fade-1o2 {
+  0%, 10%, 90%, 100% {
+    opacity: var(--fade-max);
+  }
+  40%, 60% {
+    opacity: var(--fade-min);
+  }
+}
+@-o-keyframes fade-1o2 {
+  0%, 10%, 90%, 100% {
+    opacity: var(--fade-max);
+  }
+  40%, 60% {
+    opacity: var(--fade-min);
+  }
+}
+@keyframes fade-1o2 {
+  0%, 10%, 90%, 100% {
+    opacity: var(--fade-max);
+  }
+  40%, 60% {
+    opacity: var(--fade-min);
+  }
+}
+@-moz-keyframes fade-2o2 {
+  0%, 10%, 90%, 100% {
+    opacity: var(--fade-min);
+  }
+  40%, 60% {
+    opacity: var(--fade-max);
+  }
+}
+@-webkit-keyframes fade-2o2 {
+  0%, 10%, 90%, 100% {
+    opacity: var(--fade-min);
+  }
+  40%, 60% {
+    opacity: var(--fade-max);
+  }
+}
+@-o-keyframes fade-2o2 {
+  0%, 10%, 90%, 100% {
+    opacity: var(--fade-min);
+  }
+  40%, 60% {
+    opacity: var(--fade-max);
+  }
+}
+@keyframes fade-2o2 {
+  0%, 10%, 90%, 100% {
+    opacity: var(--fade-min);
+  }
+  40%, 60% {
+    opacity: var(--fade-max);
+  }
+}
+</style></head><body><div class="reveal"><div class="slides"><section><h1 style="font-variant: small-caps">Every Author as<br>First Author</h1><hr><h2 class="r-stack"><div class="stack fragment fade-out" data-fragment-index="1" title="Erik Demaine; Martin Demaine"><div class="name">Erik Demaine</div><div class="name">Martin Demaine</div></div><div class="stack fragment fade-in" data-fragment-index="1" title="Erik Demaine; Martin Demaine"><div class="name a1o2">Erik Demaine</div><div class="name a2o2">Martin Demaine</div></div></h2><h3>M.I.T.</h3><hr><h4>SIGTBD 2023</h4></section><section><h2>The Problem: Authorship Order</h2><div class="columns v-top"><div class="column"><ul><li>Most common order: <b>decreasing significance</b></li><li>Difficult to measure</li><li>Uncomfortable conversations, arguments, feuds</li><li>What if contributions are roughly <b>equal</b>?</li></ul></div><div class="column"><a href="https://doi.org/10.1126/science.1058040"><img class="frame" src="figs/human-genome.jpg" width="1000" alt="Title page from the Human Genome Project paper" title="Title page from the Human Genome Project paper" style="margin-top:-0.25em !important"></a></div></div></section><section><h2>Alphabetical Order</h2><a href="https://doi.org/10.2197/ipsjjip.28.987"><img class="frame" width="1000" src="figs/alphabetical-15.png" alt="Our current record of 15 authors on a paper, in alphabetical order" title="Our current record of 15 authors on a paper, in alphabetical order"></a><ul><li>Make order <b>algorithmic</b> and thus <b>meaningless</b></li><li>Common in economics, mathematics, and theoretical computer science</li><li>Tenet of <b>supercollaboration</b><cite class="bracket autostack">Bosboom; Demaine; Demaine; Lynch 2018</cite>:<br>in brainstorming, ideas and failures are as important as successes</li><li>Guarantee contributions are fairly recognized without ever arguing who contributed what</li></ul></section><section><h2>Bias</h2><ul><li><b>Citations</b> in body of paper often “X et al. <cite class="bracket">#</cite>”<br>for numeric or “<cite>(X et al.)</cite>” for author/year, <br>which gives first author X unequal promotion<ul><li><u>Recommendation:</u> Write “X, Y, and Z <cite class="bracket">#</cite>”</li><li>Impractical for papers with &gt;10 authors</li></ul></li><li><b>Sorting</b> bibliographies alphabetically clusters more by first author, giving unequal promotion</li><li><i>Above are fundamental limitations of any order</i></li><li>Alphabetical order <b>judged</b> by fields with decreasing-contribution order</li></ul></section><section><h2>Alphabetical Discrimination</h2><ul><li>People with alphabetically earlier surnames are more likely to succeed academically<cite class="bracket autostack">Weber 2018</cite></li></ul><a class="r-stretch" href="https://doi.org/10.1093/reseval/rvy008" style="margin-top: 0.5em !important; display: block"><img class="frame" src="figs/weber-table.png" alt="Table 1 from Weber 2018, summarizing studies on alphabetical discrimination" title="Table 1 from Weber 2018, summarizing studies on alphabetical discrimination"></a></section><section data-transition="fade"><h2>Alternatives: Games</h2><ul><li>25-game croquet series<cite class="bracket autostack">Hassell; May 1974</cite></li><li>2-day backgammon contest<cite class="bracket autostack">Godley; May 1977</cite></li><li>Tennis match<cite class="bracket autostack">Griffiths; Anderson 1978</cite></li><li>Basketball free throws<cite class="bracket autostack">Fauth; Resetarits 1991</cite></li><li>Arm wrestling<cite class="bracket autostack">Shulman; Bermingham 1995</cite></li><li>Brownie bake-off<cite class="bracket autostack">Young; Young 1992</cite></li><li>A game of chicken<cite class="bracket autostack">Riechert; Hammerstein 1983</cite></li><li>Rock paper scissors<cite class="bracket autostack">Kupfer; Webbeking; Franklin 2004</cite></li></ul><div class="columns"><div class="column"><a href="https://twitter.com/AndyPurvisNHM/status/783326646464045057"><img class="invert frame" src="figs/publish-and-perish.jpg" width="800" style="padding:0px !important; margin-top: 0.2em !important" alt="Publish and perish: a quick way of resolving who gets to be first author"></a></div><div class="column fill" style="align-self: center"><a class="url" href="https://twitter.com/AndyPurvisNHM/status/783326646464045057">https://twitter.com/ AndyPurvisNHM/status/ 783326646464045057</a></div></div></section><section data-transition="fade"><h2>Alternatives: Randomness</h2><ul><li>Coin toss<cite class="bracket autostack">Miller; Ballard 1992</cite></li><li>Dice roll<cite class="bracket autostack">Mandle; Bufford; Schmidt; Daehler 2011</cite></li><li>Outcome of famous cricket games<cite class="bracket autostack">O’Hara; Kotze 2010</cite></li><li>Currency exchange rate fluctuation<br><cite class="bracket autostack">Feder; Mitchell-Olds 2003</cite></li></ul><div class="columns v-top"><div class="column fill"><ul><li>Dog treat consumption order<cite class="bracket autostack">Rochman; Brookson; Bikker; Djuric; Earn; Bucci; Athey; Huntington; McIlwraith; Munno; De  Frond; Kolomijeca; Erdle; Grbic; Bayoumi; Borrelle; Wu; Santoro; Werbowski; Zhu; Giles; Hamilton; Thaysen; Kaura; Klasios; Ead; Kim; Sherlock; Ho; Hung 2019</cite></li></ul><p><a class="url" href="https://twitter.com/ChelseaRochman/status/1110580954253484032">https://twitter.com/ChelseaRochman/ status/1110580954253484032</a></p></div><div class="column" style="margin-top:-1.25em"><a class="url" href="https://twitter.com/ChelseaRochman/status/1110580954253484032"><img class="my-0" width="600" src="figs/dog-treat.jpg"></a></div></div></section><section data-transition="fade"><h2>Alternatives: Authors</h2><ul><li>Height<cite class="bracket autostack">Marston; Jones; Woodward 2005</cite></li><li>Fertility<cite class="bracket autostack">Oliver; Babcock 1992</cite></li><li>Proximity to tenure<cite class="bracket autostack">Roderick; Gillespie 1998</cite></li><li>Reverse alphabetical order<br><cite class="bracket autostack">Zolensky; Zega; Yano; Wirick; Westphal; Weisberg; Weber; Warren; Velbel; Tsuchiyama; Tsou; Toppani; Tomioka; Tomeoka; Teslich; Taheri; Susini; Stroud; Stephan; Stadermann; Snead; Simon; Simionovici; See; Robert; Rietmeijer; Rao; Perronnet; Papanastassiou; Okudaira; Ohsumi; Ohnishi; Nakamura-Messenger; Nakamura; Mostefaoui; Mikouchi; Meibom; Matrajt; Marcus; Leroux; Lemelle; Le; Lanzirotti; Langenhorst; Krot; Keller; Kearsley; Joswiak; Jacob; Ishii; Harvey; Hagiya; Grossman; Grossman; Graham; Gounelle; Gillet; Genge; Flynn; Ferroir; Fallon; Ebel; Dai; Cordier; Clark; Chi; Butterworth; Brownlee; Bridges; Brennan; Brearley; Bradley; Bleuet; Bland; Bastien 2006</cite></li><li>Degree of belief in the paper's thesis<br><cite class="bracket autostack">Clark; Chalmers 1998</cite></li></ul></section><section><h2>Our Solution</h2><ul><li><b>New standard</b> for listing authors:<blockquote>Superimpose all author names on top of each other (<b>stack</b>)</blockquote></li><li><u>Example:</u><blockquote>Erik Demaine &amp; Martin Demaine →<div class="autostack">Erik Demaine; Martin Demaine</div></blockquote></li><li><b>Every author comes first!</b><p></p></li><li>Hybrid for inequal contributions: stack clusters of authors with equal contributions</li></ul></section><section><h2>Independent Discovery</h2><a href="https://floriantramer.com/docs/papers/Author_Ordership.pdf"><img class="frame" src="figs/tcizjncl-title.png"></a><a href="https://floriantramer.com/docs/papers/Author_Ordership.pdf"><img class="frame" src="figs/tcizjncl-figure.png"></a></section><section><h2>Opacity</h2><ul><li><div class="stack" title="Erik Demaine; Martin Demaine"><div class="name" style="opacity:1">Erik Demaine</div><div class="name" style="opacity:1">Martin Demaine</div></div><span class="ml-2">(opacity 1, no transparency)</span></li><li><div class="stack" title="Erik Demaine; Martin Demaine"><div class="name" style="opacity:0.75">Erik Demaine</div><div class="name" style="opacity:0.75">Martin Demaine</div></div><span class="ml-2">(opacity 3/4)</span></li><li><div class="stack" title="Erik Demaine; Martin Demaine"><div class="name" style="opacity:0.666">Erik Demaine</div><div class="name" style="opacity:0.666">Martin Demaine</div></div><span class="ml-2">(opacity 2/3)</span></li><li><div class="stack" title="Erik Demaine; Martin Demaine"><div class="name" style="opacity:0.5">Erik Demaine</div><div class="name" style="opacity:0.5">Martin Demaine</div></div><span class="ml-2">(opacity 1/2)</span><p></p></li><li>Opacity &lt; 1 reveals overlaps and density</li><li>For uniformity, we use opacity 2/3 for all authors</li><li><u>Future work:</u> Vary opacity by number of authors</li></ul></section><section><h2>Revealing the Names</h2><div class="columns"><div class="column"><div class="autostack">Erik Demaine; Martin Demaine 2023</div></div><div class="column space"></div><div class="column"><div class="autostack">J. C. Venter; M. D. Adams; E. W. Myers; P. W. Li; R. J. Mural; G. G. Sutton; H. O. Smith; M. Yandell; C. A. Evans; R. A. Holt; J. D. Gocayne; P. Amanatides; R. M. Ballew; D. H. Huson; J. R. Wortman; Q. Zhang; C. D. Kodira; X. H. Zheng; L. Chen; M. Skupski; G. Subramanian; P. D. Thomas; J. Zhang; G. L. G. Miklos; C. Nelson; S. Broder; A. G. Clark; J. Nadeau; V. A. McKusick; N. Zinder; A. J. Levine; R. J. Roberts; M. Simon; C. Slayman; M. Hunkapiller; R. Bolanos; A. Delcher; I. Dew; D. Fasulo; M. Flanigan; L. Florea; A. Halpern; S. Hannenhalli; S. Kravitz; S. Levy; C. Mobarry; K. Reinert; K. Remington; J. Abu-Threideh; E. Beasley; K. Biddick; V. Bonazzi; R. Brandon; M. Cargill; I. Chandramouliswaran; R. Charlab; K. Chaturvedi; Z. Deng; V. D. Francesco; P. Dunn; K. Eilbeck; C. Evangelista; A. E. Gabrielian; W. Gan; W. Ge; F. Gong; Z. Gu; P. Guan; T. J. Heiman; M. E. Higgins; R. R. Ji; Z. Ke; K. A. Ketchum; Z. Lai; Y. Lei; Z. Li; J. Li; Y. Liang; X. Lin; F. Lu; G. V. Merkulov; N. Milshina; H. M. Moore; A. K. Naik; V. A. Narayan; B. Neelam; D. Nusskern; D. B. Rusch; S. Salzberg; W. Shao; B. Shue; J. Sun; Z. Wang; A. Wang; X. Wang; J. Wang; M. Wei; R. Wides; C. Xiao; C. Yan; A. Yao; J. Ye; M. Zhan; W. Zhang; H. Zhang; Q. Zhao; L. Zheng; F. Zhong; W. Zhong; S. Zhu; S. Zhao; D. Gilbert; S. Baumhueter; G. Spier; C. Carter; A. Cravchik; T. Woodage; F. Ali; H. An; A. Awe; D. Baldwin; H. Baden; M. Barnstead; I. Barrow; K. Beeson; D. Busam; A. Carver; A. Center; M. L. Cheng; L. Curry; S. Danaher; L. Davenport; R. Desilets; S. Dietz; K. Dodson; L. Doup; S. Ferriera; N. Garg; A. Gluecksmann; B. Hart; J. Haynes; C. Haynes; C. Heiner; S. Hladun; D. Hostin; J. Houck; T. Howland; C. Ibegwam; J. Johnson; F. Kalush; L. Kline; S. Koduru; A. Love; F. Mann; D. May; S. McCawley; T. McIntosh; I. McMullen; M. Moy; L. Moy; B. Murphy; K. Nelson; C. Pfannkoch; E. Pratts; V. Puri; H. Qureshi; M. Reardon; R. Rodriguez; Y. H. Rogers; D. Romblad; B. Ruhfel; R. Scott; C. Sitter; M. Smallwood; E. Stewart; R. Strong; E. Suh; R. Thomas; N. N. Tint; S. Tse; C. Vech; G. Wang; J. Wetter; S. Williams; M. Williams; S. Windsor; E. Winn-Deen; K. Wolfe; J. Zaveri; K. Zaveri; J. F. Abril; R. Guigo; M. J. Campbell; K. V. Sjolander; B. Karlak; A. Kejariwal; H. Mi; B. Lazareva; T. Hatton; A. Narechania; K. Diemer; A. Muruganujan; N. Guo; S. Sato; V. Bafna; S. Istrail; R. Lippert; R. Schwartz; B. Walenz; S. Yooseph; D. Allen; A. Basu; J. Baxendale; L. Blick; M. Caminha; J. Carnes-Stine; P. Caulk; Y. H. Chiang; M. Coyne; C. Dahlke; A. D. Mays; M. Dombroski; M. Donnelly; D. Ely; S. Esparham; C. Fosler; H. Gire; S. Glanowski; K. Glasser; A. Glodek; M. Gorokhov; K. Graham; B. Gropman; M. Harris; J. Heil; S. Henderson; J. Hoover; D. Jennings; C. Jordan; J. Jordan; J. Kasha; L. Kagan; C. Kraft; A. Levitsky; M. Lewis; X. Liu; J. Lopez; D. Ma; W. Majoros; J. McDaniel; S. Murphy; M. Newman; T. Nguyen; N. Nguyen; M. Nodell; S. Pan; J. Peck; M. Peterson; W. Rowe; R. Sanders; J. Scott; M. Simpson; T. Smith; A. Sprague; T. Stockwell; R. Turner; E. Venter; M. Wang; M. Wen; D. Wu; M. Wu; A. Xia; A. Zandieh; X. Zhu 2006</div></div></div><p></p><ul><li>Hovering over names pops up original name list</li><li>Copy/paste results in original name list</li><li>Also in PDF compiled from LaTeX</li></ul><p></p><table style="font-size: 77%"><tr><th>PDF viewer</th><th>Hover tooltip</th><th>Copy/paste</th></tr><tr><td>Acrobat</td><td class="text-center">✓</td><td class="text-center">✓</td></tr><tr><td>Chrome</td><td class="text-center"> </td><td class="text-center">✓</td></tr><tr><td>Evince</td><td class="text-center">✓</td><td class="text-center">✓</td></tr><tr><td>Firefox</td><td class="text-center">✓</td><td class="text-center"> </td></tr><tr><td>Preview</td><td class="text-center"> </td><td class="text-center"> </td></tr><tr><td>VSCode</td><td class="text-center">✓</td><td class="text-center"> </td></tr></table></section><section><h2>Space Savings</h2><ul><li><b>Credit</b>: Papers with hundreds of authors never cited with all names, even in bibliography<ul><li><span class="autostack">J. C. Venter; M. D. Adams; E. W. Myers; P. W. Li; R. J. Mural; G. G. Sutton; H. O. Smith; M. Yandell; C. A. Evans; R. A. Holt; J. D. Gocayne; P. Amanatides; R. M. Ballew; D. H. Huson; J. R. Wortman; Q. Zhang; C. D. Kodira; X. H. Zheng; L. Chen; M. Skupski; G. Subramanian; P. D. Thomas; J. Zhang; G. L. G. Miklos; C. Nelson; S. Broder; A. G. Clark; J. Nadeau; V. A. McKusick; N. Zinder; A. J. Levine; R. J. Roberts; M. Simon; C. Slayman; M. Hunkapiller; R. Bolanos; A. Delcher; I. Dew; D. Fasulo; M. Flanigan; L. Florea; A. Halpern; S. Hannenhalli; S. Kravitz; S. Levy; C. Mobarry; K. Reinert; K. Remington; J. Abu-Threideh; E. Beasley; K. Biddick; V. Bonazzi; R. Brandon; M. Cargill; I. Chandramouliswaran; R. Charlab; K. Chaturvedi; Z. Deng; V. D. Francesco; P. Dunn; K. Eilbeck; C. Evangelista; A. E. Gabrielian; W. Gan; W. Ge; F. Gong; Z. Gu; P. Guan; T. J. Heiman; M. E. Higgins; R. R. Ji; Z. Ke; K. A. Ketchum; Z. Lai; Y. Lei; Z. Li; J. Li; Y. Liang; X. Lin; F. Lu; G. V. Merkulov; N. Milshina; H. M. Moore; A. K. Naik; V. A. Narayan; B. Neelam; D. Nusskern; D. B. Rusch; S. Salzberg; W. Shao; B. Shue; J. Sun; Z. Wang; A. Wang; X. Wang; J. Wang; M. Wei; R. Wides; C. Xiao; C. Yan; A. Yao; J. Ye; M. Zhan; W. Zhang; H. Zhang; Q. Zhao; L. Zheng; F. Zhong; W. Zhong; S. Zhu; S. Zhao; D. Gilbert; S. Baumhueter; G. Spier; C. Carter; A. Cravchik; T. Woodage; F. Ali; H. An; A. Awe; D. Baldwin; H. Baden; M. Barnstead; I. Barrow; K. Beeson; D. Busam; A. Carver; A. Center; M. L. Cheng; L. Curry; S. Danaher; L. Davenport; R. Desilets; S. Dietz; K. Dodson; L. Doup; S. Ferriera; N. Garg; A. Gluecksmann; B. Hart; J. Haynes; C. Haynes; C. Heiner; S. Hladun; D. Hostin; J. Houck; T. Howland; C. Ibegwam; J. Johnson; F. Kalush; L. Kline; S. Koduru; A. Love; F. Mann; D. May; S. McCawley; T. McIntosh; I. McMullen; M. Moy; L. Moy; B. Murphy; K. Nelson; C. Pfannkoch; E. Pratts; V. Puri; H. Qureshi; M. Reardon; R. Rodriguez; Y. H. Rogers; D. Romblad; B. Ruhfel; R. Scott; C. Sitter; M. Smallwood; E. Stewart; R. Strong; E. Suh; R. Thomas; N. N. Tint; S. Tse; C. Vech; G. Wang; J. Wetter; S. Williams; M. Williams; S. Windsor; E. Winn-Deen; K. Wolfe; J. Zaveri; K. Zaveri; J. F. Abril; R. Guigo; M. J. Campbell; K. V. Sjolander; B. Karlak; A. Kejariwal; H. Mi; B. Lazareva; T. Hatton; A. Narechania; K. Diemer; A. Muruganujan; N. Guo; S. Sato; V. Bafna; S. Istrail; R. Lippert; R. Schwartz; B. Walenz; S. Yooseph; D. Allen; A. Basu; J. Baxendale; L. Blick; M. Caminha; J. Carnes-Stine; P. Caulk; Y. H. Chiang; M. Coyne; C. Dahlke; A. D. Mays; M. Dombroski; M. Donnelly; D. Ely; S. Esparham; C. Fosler; H. Gire; S. Glanowski; K. Glasser; A. Glodek; M. Gorokhov; K. Graham; B. Gropman; M. Harris; J. Heil; S. Henderson; J. Hoover; D. Jennings; C. Jordan; J. Jordan; J. Kasha; L. Kagan; C. Kraft; A. Levitsky; M. Lewis; X. Liu; J. Lopez; D. Ma; W. Majoros; J. McDaniel; S. Murphy; M. Newman; T. Nguyen; N. Nguyen; M. Nodell; S. Pan; J. Peck; M. Peterson; W. Rowe; R. Sanders; J. Scott; M. Simpson; T. Smith; A. Sprague; T. Stockwell; R. Turner; E. Venter; M. Wang; M. Wen; D. Wu; M. Wu; A. Xia; A. Zandieh; X. Zhu</span><span>(274)</span><span class="ml-2">vs.</span><span class="ml-2">half a page</span></li></ul></li><li><b>Fairness</b>: Papers with varying number of authors occupy similar space in bibliography</li><li><b>Effort</b>: Easier to meet page limits</li><li><b>Efficiency</b>: Less paper and ink</li></ul></section><section><h2>Technology</h2></section><section><h2>Technology: LaTeX</h2></section><section><h2>Technology: BibTeX</h2></section><section><h2>Technology: HTML</h2></section><section><h2>Future Work: Name Length</h2></section><section><h2>Future Work: Readability</h2><ul><li><b>Round-robin documents</b> signed by authors in a circle to prevent identification of a ringleader (such as mutineer sailors)</li><li>xxx image</li></ul></section></div></div><script>(function() {
+  Reveal.initialize({
+    center: false,
+    slideNumber: true,
+    hash: true,
+    transition: 'none',
+    width: 1100,
+    height: 768,
+    minScale: 0.1,
+    maxScale: 10,
+    plugins: [RevealMath.KaTeX, RevealChalkboard],
+    katex: {
+      local: 'node_modules/katex'
+    },
+    chalkboard: {
+      background: ['none', 'node_modules/reveal.js-plugins/chalkboard/img/blackboard.png'],
+      boardmarkerWidth: 7,
+      colorButtons: true,
+      theme: 'whiteboard'
+    }
+  });
+
+}).call(this);
+</script><script src="stack.js"></script></body></html>
