@@ -238,6 +238,25 @@ section
     li <b>Efficiency</b>: Less paper and ink
 
 section
+  h2 Technology
+  ul
+    li <b>LaTeX</b>: 
+      code <span class="keyword">\namestack</span>{E. Demaine; M. Demaine}
+    li <b>BibTeX</b>: fully automatic, including <code>natbib.sty</code>
+      .r-stack.mt-1
+        img.frame(src="figs/bibliography-sample.png")
+        img.frame(src="figs/citation-sample.jpg", style="width:400px; align-self: right; margin-top: -0.2em !important; margin-left: 2em !important; background: black")
+  ul
+    li <b>HTML</b>: 
+      code &lt;<span class="keyword">span</span> <span class="keyword">class</span>="autostack"&gt;E. Demaine; M. Demaine&lt;/<span class="keyword">span</span>&gt;
+      p
+    li(style="font-size: smaller") Open source:
+      br
+      a(href="https://github.com/edemaine/author-stack-paper") https://github.com/edemaine/author-stack-paper
+      br
+      a(href="https://github.com/edemaine/author-stack-talk") https://github.com/edemaine/author-stack-talk
+
+section(data-visibility="hidden")
   h2 Technology: LaTeX
   ul
     li
@@ -260,7 +279,7 @@ section
       .r-fit-text
         a(href="https://github.com/edemaine/author-stack-paper") https://github.com/edemaine/author-stack-paper
 
-section
+section(data-visibility="hidden")
   h2 Technology: BibTeX
   ul
     li <code>stack-abbrvnat.bst</code> bibliography style
@@ -272,7 +291,7 @@ section
       .r-fit-text
         a(href="https://github.com/edemaine/author-stack-paper") https://github.com/edemaine/author-stack-paper
 
-section
+section(data-visibility="hidden")
   h2 Technology: HTML
   ul
     li
@@ -316,8 +335,9 @@ section
     li
       cite.autostack Bosboom; Chen; Chung; Compton; Coulombe; Demaine; Demaine; Filho; Hendrickson; Hesterberg; Hsu; Hu; Korten; Luo; Zhang 2020
       |  is hard to read
-    li One approach: <b>Circle</b> has no first author
-  img(src="figs/circle.png")
+      p
+    li.fragment(data-fragment-index=1) One approach: <b>Circle</b> has no first author
+  img.fragment(data-fragment-index=1, src="figs/circle.png")
 
 section
   h2 Round-Robin Documents
